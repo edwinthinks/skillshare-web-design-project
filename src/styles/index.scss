@@ -1,5 +1,97 @@
-$body-color: blue;
+$dark-blue: #3931AA;
+$light-blue: #8481DC;
+$light-pink: #F1DDE8;
+$white: #F5F5F7;
 
-body {
-  color: $body-color;
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700,900&display=swap');
+
+body, html {
+  font-family: 'Rubik', sans-serif;
+  margin: 0px;
+}
+
+
+.hero {
+  background: url('./assets/2760939.jpg') no-repeat 0 0;
+  background-size: 100% 100vh;
+  height: 100vh;
+
+  &__graphic {
+    background: url('./assets/meditation_icon.png') no-repeat 0 0;
+    background-size: 200px 200px;
+    height: 200px;
+    width: 200px;
+    float: right;
+    position: absolute;
+    top: -177px;
+    left: 10px;
+  }
+
+  &__banner {
+    position: absolute;
+    padding: 20px 30px;
+    top: 40%;
+    left: 15%;
+    width: 300px;
+    background-color: rgba(0,0,0,.8);
+
+    h1 {
+      margin: 5px 0;
+      font-size: 55px;
+      color: $white;
+    }
+
+    h3 {
+      font-weight: normal;
+      margin: 5px 0;
+      color: $white;
+    }
+
+    .cta {
+      margin-top: 10px;
+      float: left;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 3px;
+      padding: 10px;
+      box-shadow: 0 0 0 2px rgba(0,0,0,.15);
+      text-decoration: none;
+      background-color: $dark-blue;
+      color: $white;
+    }
+  }
+}
+
+.nav {
+  display: block;
+  padding: 5px;
+  background-color: $dark-blue;
+  color: $white;
+  margin-bottom: 30px;
+
+  &__logo {
+    font-weight: bold;
+    color: $white;
+    font-size: 40px;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+
+  &__links {
+    list-style-type: none;
+    float: right;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  &__link {
+    color: $white;
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
 }
