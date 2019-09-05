@@ -1,3 +1,14 @@
 import '../styles/index.scss';
 
-console.log('webpack starterkit');
+window.onload = function() {
+
+  window.showPopup = function() {
+    var popup = document.getElementById('popup');
+    popup.classList.add('show');
+  }
+
+  window.closePopup = function() {
+    var popup = document.getElementById('popup');
+    popup.classList.remove('show');
+  }
+}

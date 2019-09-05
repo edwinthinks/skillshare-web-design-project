@@ -1,80 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Calm Rise</title>
-</head>
-<body>
-  <div class='hero'>
-    <div class='hero__banner'>
-      <h1> Calm Rise <h1>
-      <h3> The thing about meditation is that you become more and more YOU.</h3>
-      <button href='#about' class='cta'>Learn More</button>
-      <div class='hero__graphic'></div>
-    </div>
-  </div>
-
-  <div class='nav'>
-    <nav>
-      <a href='#' class='nav__logo'>Calm Rise</a>
-      <ul class='nav__links'>
-        <li> <a href='#' class='nav__link'>About</a></li>
-        <li> <a href='#' class='nav__link'>Testamonials</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <div class='about' id='about'>
-    <div class='about__wrapper'>
-      <div class='about__text'>
-        <h2> Be Present </h1>
-        <p>
-        Be conscious of yourself as consciousness alone, watch all the thoughts come and go. Come to the conclusion, by direct experience, that you are really consciousness itself, not its ephemeral contents.
-        </p>
-        <p>
-        If you can resist the impulse to claim each and every thought as your own, you will come to a startling conclusion: you will discover that you are the consciousness in which the thoughts appear and disappear.
-        </p>
-      </div>
-      <button class='cta'>Sign up</button>
-      <div class='about__image'></div>
-    </div>
-  </div>
-
-  <div class='testamonials'>
-    <div class='testamonials__wrapper'>
-      <h1> Testamonials </h1>
-      <div class='testamonials__box'>
-        <div class='testamonials__image'></div>
-        <h3> Robert Coker </h3>
-        <p> Calm Rise was an amazing service that I still am not sure how they did what they did </p>
-      </div>
-
-      <div class='testamonials__box'>
-        <div class='testamonials__image'></div>
-        <h3> Jimmy Lai </h3>
-        <p> Highly recommend for anyone that treasures peace of mind </p>
-      </div>
-
-      <div class='testamonials__box'>
-        <div class='testamonials__image'></div>
-        <h3> Cindy Lee </h3>
-        <p> My stress melted away! </p>
-      </div>
-
-      <div class='testamonials__box'>
-        <div class='testamonials__image'></div>
-        <h3> Crae Sosa </h3>
-        <p> I only regret not learning about this sooner! </p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calm Rise</title>
+  </head>
+  <body>
+    <div class='hero'>
+      <div class='hero__banner'>
+        <h1> Calm Rise <h1>
+            <h3> The thing about meditation is that you become more and more YOU.</h3>
+            <a href='#about' class='cta'>Learn More</a>
+            <div class='hero__graphic'></div>
       </div>
     </div>
-  </div>
 
-  <div class='sep'></div>
+    <div class='nav'>
+      <nav>
+        <a href='#' class='nav__logo'>Calm Rise</a>
+        <ul class='nav__links'>
+          <li> <a href='#about' class='nav__link'>About</a></li>
+          <li> <a href='#testamonials' class='nav__link'>Testamonials</a></li>
+        </ul>
+      </nav>
+    </div>
 
-  <footer>
-    Calm Rise - 2019
-  </footer>
+    <div class='about' id='about'>
+      <h1> About </h1>
+      <div class='about__wrapper'>
+        <div class='about__text'>
+          <h2> Be Present </h1>
+          <p>
+          Be conscious of yourself as consciousness alone, watch all the thoughts come and go. Come to the conclusion, by direct experience, that you are really consciousness itself, not its ephemeral contents.
+          </p>
+          <p>
+          If you can resist the impulse to claim each and every thought as your own, you will come to a startling conclusion: you will discover that you are the consciousness in which the thoughts appear and disappear.
+          </p>
+        </div>
+        <a class='cta' href="javascript:()" onclick="window.showPopup();">Sign up</a>
+        <div class='about__image'></div>
+      </div>
+    </div>
 
-</body>
+    <div class='testamonials' id='testamonials'>
+      <div class='testamonials__wrapper'>
+        <h1> Testamonials </h1>
+        <div class='testamonials__box'>
+          <div class='testamonials__image'></div>
+          <h3> Robert Coker </h3>
+          <p> Calm Rise was an amazing service that I still am not sure how they did what they did </p>
+        </div>
+
+        <div class='testamonials__box'>
+          <div class='testamonials__image'></div>
+          <h3> Jimmy Lai </h3>
+          <p> Highly recommend for anyone that treasures peace of mind </p>
+        </div>
+
+        <div class='testamonials__box'>
+          <div class='testamonials__image'></div>
+          <h3> Cindy Lee </h3>
+          <p> My stress melted away! </p>
+        </div>
+
+        <div class='testamonials__box'>
+          <div class='testamonials__image'></div>
+          <h3> Crae Sosa </h3>
+          <p> I only regret not learning about this sooner! </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class='popup' id='popup'>
+      <div class='popup__blanket'></div>
+      <div class='popup__content'>
+        <h2> Give us your email to sign-up </h2>
+        <form>
+          <input type='text' placeholder='you@example.com'></input>
+        </form>
+
+        <div class='popup__buttons'>
+          <a href="#" class='cta' href="javascript:()" onclick="window.closePopup();">Submit</a>
+          <a href="#" class='cta close' href="javascript:()" onclick="window.closePopup();">Close</a>
+        </div>
+      </div>
+    </div>
+
+  </body>
 </html>
+
